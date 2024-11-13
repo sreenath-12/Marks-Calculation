@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Calculation</title>
+    <link href="marks.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Marks Calculation</h1>
+    <div class="container">
+        <form id="marksForm">
+            <div class="id">
+                <div>
+                    <label for="id">Name</label>
+                    <input type="text" id="id" name="id" placeholder="Enter your name"><br>
+                </div>
+                <div>
+                    <label for="roll">Roll Number</label>
+                    <input type="text" id="roll" name="roll" placeholder="Enter your roll number">
+                </div>
+            </div>
+            <h3>Subjects</h3>
+            <div class="sub">
+                <div>
+                    <label for="jav">Java</label>
+                    <input type="text" id="jav" name="jav" placeholder="Enter Java marks"><br>
+                </div>
+                <div>
+                    <label for="sql">SQL</label>
+                    <input type="text" id="sql" name="sql" placeholder="Enter SQL marks"><br>
+                </div>
+                <div>
+                    <label for="html">HTML</label>
+                    <input type="text" id="html" name="html" placeholder="Enter HTML marks"><br>
+                </div>
+                <div>
+                    <label for="reactjs">Reactjs</label>
+                    <input type="text" id="reactjs" name="reactjs" placeholder="Enter Reactjs marks">
+                </div>
+            </div>
+            <div class="button">
+                <button id="result" type="button" onclick="calculateResult()">Result</button>
+            </div>
+            <!-- Add the result display area here -->
+            <div id="output"></div>
+        </form>
+    </div>
+
+    <script src="marks.js"></script>
+</body>
+</html>
